@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:orientation="vertical"
+    tools:context=".Anggota">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        android:background="@drawable/recttoolbar"
+        app:titleTextColor="@color/white"
+        android:theme="@style/AppTheme.AppBarOverlay"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:imeOptions="actionSearch"
+                            android:inputType="number"
+                            android:id="@+id/ed_caripeminjam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Cari Peminjam"
+                            android:textColor="@android:color/black" />
+
+                        <Button
+                            android:textColor="@color/white"
+                            android:background="@drawable/rect1_2"
+                            android:id="@+id/bt_caripinjam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Cari" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nim"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"/>
+                    <EditText
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/edNim"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/round_spinner"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Judul Buku"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:enabled="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/edJudulBuku"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/round_spinner"/>
+                    <requestFocus/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tgl Pinjam"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:enabled="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/edTglPinjam"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/round_spinner"
+
+                        />
+                    <requestFocus/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tgl Batas Kembali"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:enabled="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/edTglKembali"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/round_spinner"/>
+                    <requestFocus/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keterlambatan"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:enabled="false"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/edLama"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/round_spinner"/>
+                    <requestFocus/>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tgl Di Kembalikan"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:enabled="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/edtgldiKembalikan"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/round_spinner"/>
+                    <requestFocus/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Denda"
+                        android:textColor="#000"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:enabled="false"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/edDenda"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/round_spinner"/>
+                    <requestFocus/>
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/btnSimpanPg"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rect1_2"
+                    android:padding="15dp"
+                    android:text="Simpan"
+                    android:textColor="@color/white" />
+                <requestFocus/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

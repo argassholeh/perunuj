@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_akun"
+        android:title="Akun"
+        android:icon="@drawable/ic_akun"/>
+    <item
+        android:id="@+id/nav_tentang"
+        android:title="Tentang"
+        android:icon="@drawable/ic_tentang"/>
+    <item
+        android:id="@+id/nav_exit"
+        android:title="Exit"
+        android:icon="@drawable/ic_exit"/>
+
+</menu>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailAnggota">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        android:background="@drawable/recttoolbar"
+        app:titleTextColor="@color/white"
+        android:theme="@style/AppTheme.AppBarOverlay"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:id="@+id/image_detailprofile"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_orang_grey_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:padding="4dp"
+                                    android:text="Nim"
+                                    android:textSize="14dp" />
+
+                                <EditText
+                                    android:layout_marginLeft="10dp"
+                                    android:padding="4dp"
+                                    android:inputType="number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:id="@+id/edNim"
+                                    android:layout_marginBottom="15dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:padding="4dp"
+                                    android:text="Nama"
+                                    android:textSize="14dp" />
+
+                                <EditText
+                                    android:layout_marginLeft="10dp"
+                                    android:padding="4dp"
+                                    android:inputType="textAutoCorrect"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:id="@+id/edNama"
+                                    android:layout_marginBottom="15dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:padding="4dp"
+                                    android:text="Alamat"
+                                    android:textSize="14dp" />
+
+                                <EditText
+                                    android:layout_marginLeft="10dp"
+                                    android:padding="4dp"
+                                    android:inputType="textAutoCorrect"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:id="@+id/edAlamat"
+                                    android:layout_marginBottom="15dp"
+                                    />
+                                <TextView
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Fakultas"
+                                    android:textSize="16dp"
+                                    android:layout_marginBottom="5dp"/>
+                                <LinearLayout
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp">
+                                    <Spinner
+                                        android:id="@+id/spin_fak"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:gravity="center">
+                                    </Spinner>
+                                </LinearLayout>
+                                <requestFocus/>
+
+                                <TextView
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Prodi"
+                                    android:textSize="16dp"
+                                    android:layout_marginBottom="5dp"/>
+                                <LinearLayout
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp">
+                                    <Spinner
+                                        android:id="@+id/spin_prodi"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:gravity="center">
+                                    </Spinner>
+                                </LinearLayout>
+                                <requestFocus/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:padding="4dp"
+                                    android:text="No HP"
+                                    android:textSize="14dp" />
+
+                                <EditText
+                                    android:layout_marginLeft="10dp"
+                                    android:padding="4dp"
+                                    android:inputType="textAutoCorrect"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:id="@+id/edNoHP"
+                                    android:layout_marginBottom="15dp"
+                                    />
+                                <LinearLayout
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <Button
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginLeft="20dp"
+                                        android:id="@+id/btnUpdate"
+                                        android:layout_width="120dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/rect1_2"
+                                        android:padding="15dp"
+                                        android:text="Update"
+                                        android:textColor="@color/white" />
+                                    <requestFocus/>
+
+                                    <Button
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/btnHapus"
+                                        android:layout_width="120dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:background="@drawable/rect1_2"
+                                        android:padding="15dp"
+                                        android:text="Hapus"
+                                        android:textColor="@color/white" />
+                                    <requestFocus/>
+                                </LinearLayout>
+
+
+
+
+
+                            </LinearLayout>
+
+
+                            <!--//-->
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <!--//-->
+                </LinearLayout>
+
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

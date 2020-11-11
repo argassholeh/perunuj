@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_unuja"
+    android:layout_weight="1"
+    tools:context=".splash">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/transparent"
+        android:scaleType="fitXY"
+
+        />
+    <TextView
+        android:id="@+id/tp4nj"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Perpustakaan"
+        android:textColor="@color/background"
+        android:textSize="30sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="170dp"
+        android:id="@+id/imageView"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_unuja" />
+
+
+
+    <TextView
+
+        android:id="@+id/tJember"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="120dp"
+        android:text="Universitas Nurul Jadid"
+        android:textColor="@color/background"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tJember"
+        android:layout_marginTop="5dp"
+        android:text="Paiton - Probolinggo"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/background"/>
+
+
+
+
+</RelativeLayout>
